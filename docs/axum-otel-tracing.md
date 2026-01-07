@@ -29,7 +29,7 @@ To accept `X-Amzn-Trace-Id` headers, enable the `xray` feature.
 This is not released on crates.io yet, so patch `crates.io` to use the fork branch:
 
 ```toml
-[dependencies]
+# In the existing [dependencies] section:
 init-tracing-opentelemetry = { version = "0.34", features = ["tracing_subscriber_ext", "xray"] }
 
 [patch.crates-io]
